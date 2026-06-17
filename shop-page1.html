@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Shop Page 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadCartCount()">
+
+<header>
+<img class="logo" src="logo.png">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="shop-page1.html">Shop 1</a>
+<a href="shop-page2.html">Shop 2</a>
+<a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<h2 class="title">🍫 Premium Chocolates</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="kitkat.png">
+<h3>KitKat</h3>
+<p>Rs 450</p>
+<button onclick="addToCart('KitKat',450)">Add</button>
+</div>
+
+<div class="card">
+<img src="bounty.png">
+<h3>Bounty</h3>
+<p>Rs 420</p>
+<button onclick="addToCart('Bounty',420)">Add</button>
+</div>
+
+<div class="card">
+<img src="mars.png">
+<h3>Mars</h3>
+<p>Rs 480</p>
+<button onclick="addToCart('Mars',480)">Add</button>
+</div>
+
+<div class="card">
+<img src="galaxy.png">
+<h3>Galaxy</h3>
+<p>Rs 500</p>
+<button onclick="addToCart('Galaxy',500)">Add</button>
+</div>
+
+<div class="card">
+<img src="maxbar.png">
+<h3>Maxbar</h3>
+<p>Rs 350</p>
+<button onclick="addToCart('Maxbar',350)">Add</button>
+</div>
+
+<div class="card">
+<img src="ferrero.png">
+<h3>Ferrero Rocher</h3>
+<p>Rs 1200</p>
+<button onclick="addToCart('Ferrero Rocher',1200)">Add</button>
+</div>
+
+<div class="card">
+<img src="raffaello.png">
+<h3>Raffaello</h3>
+<p>Rs 1100</p>
+<button onclick="addToCart('Raffaello',1100)">Add</button>
+</div>
+
+<div class="card">
+<img src="dubai-kunafa.png">
+<h3>Dubai Kunafa</h3>
+<p>Rs 1800</p>
+<button onclick="addToCart('Dubai Kunafa',1800)">Add</button>
+</div>
+
+</div>
+
+<footer class="footer">
+&copy; <span id="year"></span> Sweet Rush. All rights reserved.
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

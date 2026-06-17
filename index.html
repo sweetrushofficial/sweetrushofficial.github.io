@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Sweet Rush - Premium Chocolates</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadCartCount()">
+
+<header>
+<img class="logo" src="logo.png">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="shop-page1.html">Shop 1</a>
+<a href="shop-page2.html">Shop 2</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>🍫 Luxury Imported Chocolates</h1>
+<p>Premium taste. Premium experience. Delivered with Sweet Rush.</p>
+<a href="shop-page1.html" class="next-btn">🛍️ Shop Now</a>
+</section>
+
+<h2 class="title">Why Choose Us</h2>
+
+<div class="grid">
+<div class="card">
+<h3>🚚 Fast Delivery</h3>
+<p>Quick delivery service across your city.</p>
+</div>
+
+<div class="card">
+<h3>🍫 Premium Quality</h3>
+<p>Only original imported chocolates.</p>
+</div>
+
+<div class="card">
+<h3>💬 Easy Ordering</h3>
+<p>Simple WhatsApp checkout system.</p>
+</div>
+</div>
+
+<h2 class="title">🔥 Best Sellers</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="kitkat.png">
+<h3>KitKat</h3>
+<p>Rs 450</p>
+<button onclick="addToCart('KitKat',450)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="dairy-milk.png">
+<h3>Dairy Milk</h3>
+<p>Rs 300</p>
+<button onclick="addToCart('Dairy Milk',300)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="toblerone.png">
+<h3>Toblerone</h3>
+<p>Rs 1500</p>
+<button onclick="addToCart('Toblerone',1500)">Add to Cart</button>
+</div>
+
+</div>
+
+<section class="hero">
+<h2>🌍 About Sweet Rush</h2>
+<p>
+Sweet Rush is a premium chocolate brand delivering luxury imported chocolates with quality and trust.
+</p>
+<a href="about.html" class="next-btn">Read More</a>
+</section>
+
+<footer class="footer">
+&copy; <span id="year"></span> Sweet Rush. All rights reserved.
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

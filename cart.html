@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Cart - Sweet Rush</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="renderCart()">
+
+<header>
+<img class="logo" src="logo.png">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="shop-page1.html">Shop 1</a>
+<a href="shop-page2.html">Shop 2</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="cart.html">Cart</a>
+</nav>
+</header>
+
+<h2 class="title">🛒 Your Cart</h2>
+
+<ul id="cartList"></ul>
+
+<h3 id="totalAmount"></h3>
+
+<div class="grid">
+
+<div class="card checkout-card">
+
+<h3>Checkout Details</h3>
+
+<input type="text" id="custName" placeholder="Full Name">
+
+<input type="text" id="custPhone" placeholder="Phone Number">
+
+<input type="text" id="custAddress" placeholder="Full Address">
+
+<button onclick="checkout()">Checkout on WhatsApp</button>
+
+</div>
+
+</div>
+
+<footer class="footer">
+&copy; <span id="year"></span> Sweet Rush. All rights reserved.
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

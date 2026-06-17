@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Shop Page 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadCartCount()">
+
+<header>
+<img class="logo" src="logo.png">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="shop-page1.html">Shop 1</a>
+<a href="shop-page2.html">Shop 2</a>
+<a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<h2 class="title">🍫 More Chocolates</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="dairy-milk.png">
+<h3>Dairy Milk</h3>
+<p>Rs 300</p>
+<button onclick="addToCart('Dairy Milk',300)">Add</button>
+</div>
+
+<div class="card">
+<img src="snickers.png">
+<h3>Snickers</h3>
+<p>Rs 350</p>
+<button onclick="addToCart('Snickers',350)">Add</button>
+</div>
+
+<div class="card">
+<img src="toblerone.png">
+<h3>Toblerone</h3>
+<p>Rs 1500</p>
+<button onclick="addToCart('Toblerone',1500)">Add</button>
+</div>
+
+<div class="card">
+<img src="kinder-bueno.png">
+<h3>Kinder Bueno</h3>
+<p>Rs 900</p>
+<button onclick="addToCart('Kinder Bueno',900)">Add</button>
+</div>
+
+<div class="card">
+<img src="twix.png">
+<h3>Twix</h3>
+<p>Rs 400</p>
+<button onclick="addToCart('Twix',400)">Add</button>
+</div>
+
+<div class="card">
+<img src="kopiko.png">
+<h3>Kopiko</h3>
+<p>Rs 250</p>
+<button onclick="addToCart('Kopiko',250)">Add</button>
+</div>
+
+<div class="card">
+<img src="nutella.png">
+<h3>Nutella B-Ready</h3>
+<p>Rs 650</p>
+<button onclick="addToCart('Nutella B-Ready',650)">Add</button>
+</div>
+
+</div>
+
+<footer class="footer">
+&copy; <span id="year"></span> Sweet Rush. All rights reserved.
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
